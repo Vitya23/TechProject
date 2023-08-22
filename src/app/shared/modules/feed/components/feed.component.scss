@@ -1,0 +1,12 @@
+.example-card {
+    max-width: 400px;
+    min-height: 250px;
+    height: 50%;
+
+}
+
+mat-card-actions {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}

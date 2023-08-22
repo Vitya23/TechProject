@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+	<div class="container">
+		<ul class="nav" *ngIf="!isLoggedIn">
+			<li class="nav-item">
+				<a [routerLink]="['/login']" class="nav-link">Login</a>
+			</li>
+			<li>
+				<a [routerLink]="['/register']" class="nav-link">Register</a>
+			</li>
+		</ul>
+		<ul class="nav" *ngIf="isLoggedIn">
+			<li class="nav-item">
+				<a [routerLink]="['/login']" class="nav-link" (click)="Logout()">Logout</a>
+			</li>
+		</ul>
+	</div>
+</mat-toolbar>
